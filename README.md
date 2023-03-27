@@ -29,6 +29,17 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+
+### Cypress
+
+To run cypress tests, start the app
+`npm start`
+
+then run
+`npx cypress run --reporter mochawesome --reporter-options "reportDir=cypress/report/mochawesome-report,overwrite=false,html=false,json=true,timestamp=mmddyyyy_HHMMss"`
+
+Test results stored in `cypress/reports` and video of run stored in `cypress/videos`.
+
 ### `npm run eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can't go back!**
